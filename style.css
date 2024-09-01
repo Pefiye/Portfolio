@@ -1,0 +1,353 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    color: white;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body
+{
+    background-color: #150d42;
+}
+nav
+{
+    
+    width: 100vw;
+    max-width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    background: #160f43;
+    background: linear-gradient(0deg, #160f43 0%, #2e2469 100%);
+}
+nav p
+{
+    font-size: 28px;
+    font-family: "Patrick Hand SC";
+    margin: 10px;
+}
+nav ul
+{
+    display: none;
+}
+
+nav ul li
+{
+    list-style: none;
+    margin-right: 5px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+li:first-child a
+{
+    color: #1B87EB;
+}
+#bar-button
+{
+    width: 30px;
+    height: 30px;
+}
+#bar-button:checked + #bar
+{
+    display: flex;
+}
+#bar
+{
+    z-index: 11;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: max-content;
+    background-color: #ebebeb;
+    text-align: center;
+    justify-items: center;
+}
+#bar a div {
+    height: 5vh;
+    /* background-color: aliceblue; */
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+#bar >  :last-child{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+}
+.links
+{
+    color: #1B87EB;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+#page1
+{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5vh;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    z-index: 0;
+    scroll-snap-align: center;
+    background: radial-gradient(circle, #181045 0%, #150d42 92%);
+}
+#page1 h1
+{
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    min-width: 60vw;
+    position: absolute;
+    top: 70px;
+}
+#page1 button
+{
+    position: absolute;
+    min-width: 310px;
+    width: 80%;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    top: 300px;
+    left: -20px;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: #3321A7;
+    z-index: 10;
+    cursor: pointer;
+}
+#page1 img
+{
+    width: 70%;
+    min-width: 300px;
+    height: auto;
+    top: 20%;
+    right: -100px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+#page2
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #150d42;
+    text-align: center;     
+    z-index: 2;
+    scroll-snap-align: center;
+}
+#page2 h1
+{
+    margin-top: 5vh;
+}
+#bg
+{
+    background: rgb(20,13,66);
+    background: linear-gradient(0deg, rgba(20,13,66,1) 0%, rgba(0,6,58,1) 10%, rgba(10,12,87,1) 50%, rgba(0,6,58,1) 90%, rgba(20,13,66,1) 100%);
+    width: 100vw;
+    height: 110vh;
+    position: absolute;
+    z-index: 1;
+    /* display: none; */
+}
+#p2i
+{
+    width: 100%;
+}
+#p2p2
+{
+    font-size: 12px;
+    margin: 30px;
+    margin-top: 40px;
+}
+#sosmed img
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+#page3
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    scroll-snap-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#page3 h1
+{
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+}
+#page3 button
+{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;       
+    background-color: #3321A7;
+    color: #ebebeb;
+    margin-top: 10px;
+}
+#page3 img
+{
+    width: 256px;
+}
+#projects > :nth-child(1)
+{
+    display: none;
+}
+
+
+
+
+
+@media (width > 480px) {
+    #bar-button
+    {
+        display: none;
+    }
+    nav ul
+    {
+        display: flex;
+    }
+    #page1 h1
+    {
+        font-size: 60px;
+        left: 90px;
+    }
+    #page1 button
+    {
+        left: 900px;        
+    }
+    #page1 img
+    {
+        width: 500px;
+        right: 10px;
+        top: 50px;
+    }
+    #page1 button
+    {
+        border-radius: 20px;
+        width: 20px;
+        left: 100px;
+        top: 400px;
+    }
+
+
+
+    #sosmed
+    {
+        position: absolute;
+        right: 20vw;
+        bottom: 25vh;
+    }
+    #sosmed img
+    {
+        width: 50px;
+        height: 50px;
+        position: static;
+    }
+    #p2p1
+    {
+        font-size: 30px;
+        position: absolute;
+        width: 45vw;
+        text-align: left;
+        top: 28vh;
+        right: 10vw;
+    }
+    #p2p2
+    {
+        position: absolute;
+        left: 42.7vw;
+        bottom: 20vh;
+        font-size: 30px;
+    }
+    #p2i
+    {
+        width: 500px;
+        left: 50px;
+        position: absolute;
+    }
+
+
+
+
+    #page3 img
+    {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }   
+    #projects > :nth-child(1)
+    {
+        display:inline;
+        border-radius: 50%;
+    }   
+    #projects > :nth-child(1) img
+    {
+        border-radius: 100px 0 0 100px;
+    }
+    #projects > :nth-child(2) img
+    {
+        border-radius: 0 0 0 0;
+    }
+    #projects > :nth-child(3) img
+    {
+        border-radius: 0 100px 100px 0;
+    }
+
+}

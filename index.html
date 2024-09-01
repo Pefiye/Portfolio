@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Patrick Hand SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</style>
+</head>
+<body>
+    <nav>
+        <a href=""><p>Raditya</p></a>
+        <input type="checkbox" id="bar-button">
+        <div id="bar">
+            <a onclick="check()" href="#page1"><div class="links">Home</div></a>
+            <a onclick="check()" href="#page2"><div class="links">Profile</div></a>
+            <a onclick="check()" href="#point"><div class="links">Projects</div></a>
+            <a onclick="check()">&times;</a>
+        </div>
+        <ul>
+            <li><a href="#page1">Home</a></li>
+            <li><a href="#page2">Profile</a></li>
+            <li><a href="#page3">Projects</a></li>
+        </ul>
+    </nav>
+
+
+<section id="page1">
+    <h1>
+        <b>Hi<span style="color: #359EFF;">,</span> Im an aspiring <br>
+        Full Stack Developer<br>
+        And Web Designer</b>
+    </h1>
+    <img draggable="false" src="Img/circle.png">
+    <a href="#page3"><button>My Past Projects</button></a>
+</section>
+<section id="page2">
+    <div id="bg">
+        <h1>My Profile</h1>
+        <img draggable="false" id="p2i" src="Img/me.png">
+        <div id="p2p1"><p>Hi, my name is Raditya Putra Hidayat, I’m a student from Bina Informatika Vocational Highschool and study to becomes a full stack developer, im also good at designing website.</p></div>
+        <div id="sosmed">
+            <a href="https://github.com/Pefiye"><img draggable="false" src="Img/Github.png"></a>
+            <a href="https://www.instagram.com/raditp_53/"><img draggable="false" src="Img/Instragam.png"></a>
+            <a href="https://www.linkedin.com/in/raditya-putra-hidayat-7a217331b/"><img draggable="false" src="Img/LinkedIn.png"></a>
+        </div>
+        <p id="p2p2">Thank You</p>
+    </div>
+</section>
+<section id="page3">
+    <div id="point"></div>
+<h1>My Projects</h1>
+<div id="projects">
+        <a href="index.html"><img draggable="false" src="Img/placeholder.png"></a>
+        <a href="index.html"><img draggable="false" src="Img/placeholder.png"></a>
+        <a href="index.html"><img draggable="false" src="Img/placeholder.png"></a><br>
+<button>Show More</button>
+</div>
+
+</section>
+<script>
+    function check()
+    {
+        document.getElementById("bar-button").checked = false;
+    }
+</script>
+</body>
+</html>
